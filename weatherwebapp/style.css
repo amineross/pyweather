@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "averta";
+    src: url(fonts/averta-regular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "averta";
+    src: url(fonts/averta-sb.otf);
+    font-weight: bold;
+}
+
+
+body
+{
+    font-family: "averta", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #d6d7da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content
+{
+    height: 90vh;
+    width: 80vw;
+    border-collapse: separate;
+}
+
+.main-app
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    /* border-collapse: separate; */
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-app #right
+{
+    flex: 10;
+    background-color: #f6f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-app #left
+{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #feffff;
+}
+
+#right-main-searcg
+{
+    height: 10px;
+    width: 10px;
+    min-height: 10px;
+    min-width: 10px;
+    max-height: 10px;
+    max-width: 10px;
+}
+
+#left .left-container
+{
+    /* border: darkblue solid; */
+    height: 88%;
+    width: 75%;
+}
+
+#left .left-container .location-search
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#left .left-container .location-search input
+{
+    margin-top: 3px;
+    margin-left: 10px;
+    border: none;
+    color: black;
+}
+#left .left-container .location-search img
+{
+    margin-top: 3px;
+    margin-left: 5px;
+}
+#left .left-container .location-search input::placeholder {
+    color: black;
+    font-family: "averta";
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+#main-icon
+{
+    height: 150px;
+    width: 183.33px;
+    max-width: 183.33px;
+    min-width: 183.33px;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.temp-day
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    height: 26%;
+    padding: 0;
+    border-bottom: #dedede 1px solid;
+}
+.temp-day h2
+{
+    margin: 0 0 8%;
+    padding: 0;
+    font-size: 80px;
+    height: 80px;
+    width: 80%;
+    font-weight: normal;
+}
+
+.temp-day p 
+{
+    margin: 0;
+}
+.temp-day span
+{
+    color: #b4b4b6;
+}
+
+.overall
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 8%;
+}
+
+.felt, .rain
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.felt img, .rain img
+{
+    margin-right: 5%;
+}
+.felt span, .rain span
+{
+    margin-top: 2%;
+    font-size: 13px;
+}
+
+.city
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.city span
+{
+    margin: 2rem 0 0 0;
+    font-size: 38px;
+}
+
+.city h3
+{
+    margin: 0 0 0 0;
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(165, 165, 165);
+}
+
+/* .city
+{
+    overflow: hidden;
+    width: 200px;
+    height: 90px;
+    margin-top: 5%;
+} */
+
+/* .city img {
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 0 30%;
+    margin-top: 5%;
+    border-radius: 10px;
+} */
+
+/* .centered {
+    position: absolute;
+    top: 76.3%;
+    left: 19.3%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: normal;
+  } */
+
+.right-container
+{
+
+    height: 90%;
+    width: 90%;
+}
+
+.top-bar #today
+{
+    /* border-bottom: rgb(179, 179, 179) 2px solid; */
+    margin-right: 0.3rem;
+    opacity: 0.3;
+    font-weight: bold;
+}
+.top-bar #week
+{
+    border-bottom: rgb(179, 179, 179) 2px solid;
+    margin-right: 0.3rem;
+    font-weight: bold;
+}
+
+.day-week-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    margin-top: 2rem;
+}
+
+.day-week-cards
+{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    justify-content: center;
+    /*margin-top: 2rem;*/
+    height: 70%;
+    width: 90%;
+}
+.card
+{
+    flex: 1;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-content
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.card .card-content span
+{
+    color: rgb(207, 203, 203);
+}
+
+.highlights
+{
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlights label
+{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.highlights .highlight-cards
+{
+    height: 82%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: 0%;
+}
+
+.highlights .highlight-cards .h-card
+{
+    width: 200px;
+    height: 160px;
+    margin: 0 0 0rem 0.2rem;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    margin-right: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlights .highlight-cards .h-card .h-card-content
+{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.highlights .highlight-cards .h-card-content .title
+{
+    color: lightgray;
+    font-weight:  normal;
+    font-size: 14px;
+}
+
+.highlights .highlight-cards .h-card-content .center
+{
+    width: 100%;
+    margin-top: 7%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 15%;
+}
+
+.highlights .highlight-cards .h-card-content .rating
+{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.highlights .highlight-cards .h-card-content .sunrise-sunset
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+.highlights .highlight-cards .h-card-content .sunrise-sunset label
+{
+    margin: 0 0 0.4rem 0;
+    font-weight: normal;
+}
+
+

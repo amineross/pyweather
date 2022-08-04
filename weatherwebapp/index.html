@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+            <div class="main-app">
+                <div id="left">
+                    <div class="left-container">
+                        <div class="location-search">
+                            <!-- <img src="img/icons/search2.png" alt="search" height="35px" width="45px"> -->
+                            <img src="img/icons/search2.png" height="10px" width="10px" id="right-main-search">
+                            <input type="text" class="search-bar" placeholder="Search for places...">
+                        </div>
+                        <img src="img/w-icons/SUN_SMALL_CLOUDS_CROP.png" height="150px" id="main-icon">
+                        <div class="temp-day">
+                            <h2>21°</h2>
+                            <p>Monday, <span>16:00</span></p>
+                        </div>
+                        <div class="overall">
+                            <div class="felt">
+                                <img src="img/icons/cloud.png" id="cloud" height="30px" width="30px">
+                                <span>Mostly Cloudy</span>
+                            </div>
+                            <div class="rain">
+                                <img src="img/icons/water.png" id="water" height="30px" width="30px">
+                                <span>Rain - 30%</span>
+                            </div>
+                            <!-- <div class="city">
+                                <img src="img/cities/paris.jpeg">
+                                <h3 class="centered">Paris</h3>
+                            </div> -->
+                            <div class="city">
+                                <span>📍</span>
+                                <h3>Paris</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="right-container">
+                        <div class="top-bar">
+                            <label id="today">Today</label>
+                            <label id="week">Week</label>
+                        </div>
+
+                        <div class="day-week-container">
+                            <div class="day-week-cards">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <label class="day">Sun</label>
+                                        <img src="img/w-icons/2CLOUDS.png" height="40px" width="40px" class="card-temp">
+                                        <label class="min-max">10° <span>20°</span></label>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <label class="day">Mon</label>
+                                        <img src="img/w-icons/2CLOUDS.png" height="40px" width="40px" class="card-temp">
+                                        <label class="min-max">10° <span>20°</span></label>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <label class="day">Tue</label>
+                                        <img src="img/w-icons/SUN_2CLOUDS_RAIN.png" height="40px" width="40px" class="card-temp">
+                                        <label class="min-max">10° <span>20°</span></label>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <label class="day">Wed</label>
+                                        <img src="img/w-icons/SUN_CLOUD.png" height="40px" width="40px" class="card-temp">
+                                        <label class="min-max">10° <span>20°</span></label>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <label class="day">Thu</label>
+                                        <img src="img/w-icons/SUN.png" height="40px" width="50px" class="card-temp">
+                                        <label class="min-max">10° <span>20°</span></label>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <label class="day">Fri</label>
+                                        <img src="img/w-icons/HIGH_TEMP.png" height="40px" width="40px" class="card-temp">
+                                        <label class="min-max">10° <span>20°</span></label>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <label class="day">Sat</label>
+                                        <img src="img/w-icons/LIGHTNING.png" height="40px" width="40px" class="card-temp">
+                                        <label class="min-max">10° <span>20°</span></label>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                            
+                        </div>
+
+                        <div class="highlights">
+                            <label>Today's Highlights</label>
+                            <div class="highlight-cards">
+                                <div class="h-card">
+                                    <div class="h-card-content">
+                                        <label class="title">UV Index</label>
+                                        <label class="center">5</label>
+                                        <label class="rating">Moderate 😕</label>
+                                    </div>
+                                </div>
+                                <div class="h-card">
+                                    <div class="h-card-content">
+                                        <label class="title">Wind Status</label>
+                                        <label class="center">7.70 km/h</label>
+                                    </div>
+                                </div>
+                                <div class="h-card">
+                                    <div class="h-card-content">
+                                        <label class="title">Sunrise & Sunset</label>
+                                        <div class="sunrise-sunset">
+                                            <img src="img/w-icons/SUN.png" height="30px" width="38px">
+                                            <label class="l-rise-set">6:35 AM</label>
+                                            <img src="img/w-icons/MOON.png" height="30px" width="38px">
+                                            <label class="l-rise-set">5:42 PM</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h-card">
+                                    <div class="h-card-content">
+                                        <label class="title">Humidity</label>
+                                        <label class="center">12%</label>
+                                        <label class="rating">Normal 👍</label>
+                                    </div>
+                                </div>
+                                <div class="h-card">
+                                    <div class="h-card-content">
+                                        <label class="title">Visibility</label>
+                                        <label class="center">5.2km</label>
+                                        <label class="rating">Average 😐</label>
+                                    </div>
+                                </div>
+                                <div class="h-card">
+                                    <div class="h-card-content">
+                                        <label class="title">Air Quality</label>
+                                        <label class="center">105</label>
+                                        <label class="rating">Unhealthy 👎</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
